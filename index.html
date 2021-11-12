@@ -8,10 +8,10 @@
    <title>Akan Website</title>
  </head>
  <body>
-   <section class="showcase active">
+   <section class="showcase">
      <header>
-      <h2 class="logo"><img src="./images/logo.png" style="width: 150px; height: 150px; "></h2>
-      <div class="toggle active"></div>
+      <h2 class="logo"><img src="./giphy.gif" style="width: 175px; height: 175px; "></h2>
+      <div class="toggle"></div>
      </header>
    <video src="./Akan.mp4" muted loop autoplay></video>
      <div class="overlay"></div>
@@ -34,7 +34,16 @@
        <li><a href="#">About</a></li>
        <li><a href="#">Explore</a></li>
        <li><a href="#">Contacts</a></li>
-     </ul>
+        </ul>
    </div>
+   <script>
+    var menuToggle = document.querySelector('.toggle')
+    var showcase = document.querySelector('.showcase')
+
+   menuToggle.addEventListener('click',() => {
+   menuToggle.classList.toggle('active')
+   showcase.classList.toggle('active')
+})
+   </script>
  </body>
  </html>

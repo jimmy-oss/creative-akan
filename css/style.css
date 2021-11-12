@@ -20,6 +20,7 @@
   background: #111;
   color: #fff;
   z-index: 2;
+  transition: 0.5s;
 }
 .showcase.active{
    right: 300px;
@@ -38,6 +39,7 @@
 .logo{
    cursor: pointer;
    margin-top: -2em;
+ 
 }
 .toggle{
   position: relative;
@@ -81,8 +83,10 @@
    line-height: 1em;
    text-transform: uppercase;
    color: white;
+   font-family:cursive;
    text-shadow: 2px 2px black;
    max-width: 800px;
+   
  }
  .text h3{
   font-size: 2em;
@@ -160,7 +164,7 @@
 .menu ul li a:hover{
   color: var(--overlay-colour);
 }
-@media(max-width:991px){
+@media(max-width:798px){
   .showcase, .showcase header{
     padding: 40px;
   }
