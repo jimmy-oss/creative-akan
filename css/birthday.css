@@ -215,13 +215,5 @@ p.signed {
 #card.close-half #card-front .wrap * {
    display: none;
 }
-
-footer {
-  max-width: 500px;
-  margin: 40px auto;
-  font-family: 'Nobile', sans-serif;
-  font-size: 14px;
-  line-height: 1.6;
-  color: #888;
-  text-align: center;
-}
+ 
+ 
