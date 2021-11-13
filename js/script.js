@@ -1,4 +1,4 @@
-var a=prompt("The UserName is jimmy");
+var a=prompt("The Username is jimmy");
  var b=prompt("The password is birthday");
   	if(a== "jimmy" && b=="birthday")
   	{
