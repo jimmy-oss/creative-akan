@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<head>
+  <html lang="en">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/birthday.css">
+  </head>
+<body>
+  <div id="card">
+    <div id="card-inside">
+      <div class="wrap">
+        <p>Hey,</p>
+        <p>“A wish for you on your birthday, whatever you ask may you receive, whatever you seek may you find, whatever you wish may it be fulfilled on your birthday and always. Happy birthday!</p>
+        <p>I will be there with you in your side whenever you seek me.
+        </p>
+        <p>always.</p>
+        <p>Enjoy your Day . Stay Blessed nd Happy . Keep Smiling :)</p>
+        
+        <center><h4>from</h4></center>
+        <p class="signed">Jimmy</p>
+        
+      </div>
+    </div>
+    <div id="card-front">
+      <div class="wrap">
+        <h1><img src="./images/birthday.gif" style="margin-top: -1.8em; margin-left: 1rem;"></h1>
+      </div>
+      <button id="open">&gt;</button>
+      <button id="close">&lt;</button>
+    </div>
+  </div>
+  <script>
+    (function() {
+  function $(id) {
+    return document.getElementById(id);
+  }
+
+  var card = $('card'),
+      openB = $('open'),
+      closeB = $('close'),
+      timer = null;
+  console.log('wat', card);
+  openB.addEventListener('click', function () {
+    card.setAttribute('class', 'open-half');
+    if (timer) clearTimeout(timer);
+    timer = setTimeout(function () {
+      card.setAttribute('class', 'open-fully');
+      timer = null;
+    }, 1000);
+  });
+
+  closeB.addEventListener('click', function () {
+    card.setAttribute('class', 'close-half');
+    if (timer) clearTimerout(timer);
+    timer = setTimeout(function () {
+      card.setAttribute('class', '');
+      timer = null;
+    }, 1000);
+  });
+
+}());
+
+  </script>
+
+<div style="visibility: hidden;">
+<embed src="./bday.mp3" autostart="true" loop="true">
+</div>
+<div style="visibility: hidden;">
+<embed src="./bday.mp3" autostart="true" loop="true">
+</div>
+     </body>
+             </html>
