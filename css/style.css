@@ -36,9 +36,12 @@
   align-items: center;
   justify-content: space-between;
 }
-.logo{
+.logo img{
    cursor: pointer;
    margin-top: -2em;
+   animation: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
  
 }
 .toggle{
@@ -73,12 +76,6 @@
   height: 100%;
    
  }
- .animated{
-   
- }
- 
-  
-   
  
  .text{
    position: relative;
@@ -97,6 +94,9 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; 
   animation: animate 10s linear infinite;
+  animation: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
 }
 @keyframes animate {
   to{
@@ -111,6 +111,9 @@
   color: white;
  text-shadow: 2px 1px black;
   text-transform: uppercase;
+  animation: moveInRight;
+  animation-duration: 1s;
+ animation-timing-function: ease-out;
   
 }
 .text p{
@@ -120,6 +123,9 @@
   max-width: 700px;
   color: white;
  text-shadow: 2px 1px black;
+ animation: moveInBottom;
+animation-duration: 1s;
+animation-timing-function: ease-out;
 }
 .text a {
   display: inline-block;
@@ -133,6 +139,9 @@
   letter-spacing: 2px;
   border-radius: 5rem;
   transition: 0.2s;
+  animation: moveInBottom;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
 }
 .text a:hover{
   letter-spacing: 6px;
@@ -180,6 +189,64 @@
 .menu ul li a:hover{
   color: var(--overlay-colour);
 }
+@keyframes moveInLeft{
+  0%{
+      opacity: 0;
+      transform: translateX(100px);
+
+  }
+  80%{
+      transform: translateX(-10px);
+
+  }
+  100%{
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveInRight{
+ 0%{
+     opacity: 0;
+     transform: translateX(-100px);
+
+ }
+ 80%{
+     transform: translateX(10px);
+
+ }
+ 100%{
+   opacity: 1;
+   transform: translate(0);
+ }
+}
+@keyframes moveInBottom{
+ 0%{
+     opacity: 0;
+     transform: translateY(100px);
+
+ }
+ 80%{
+     transform: translateY(-10px);
+
+ }
+ 100%{
+   opacity: 1;
+   transform: translate(0);
+ }
+}
+@keyframes moveInButton{
+ 0%{
+     opacity: 0;
+     transform: translateY(30px);
+
+ }
+  
+ 100%{
+   opacity: 1;
+   transform: translate(0);
+ }
+}
+
 @media(max-width:798px){
   .showcase, .showcase header{
     padding: 40px;
