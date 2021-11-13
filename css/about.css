@@ -24,7 +24,9 @@ body{
  cursor: pointer;
  float: left;
  box-shadow: 0 0 10px;
- 
+ animation: moveInRight;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
  }
  
  .button span {
@@ -69,18 +71,81 @@ body{
  
 img.birthday{
   max-height: 40vh;
+  animation: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
 }
 .text{
   padding: 1em;
   font-size: 18px;
   color: black;
   text-shadow: 1px 1px white;
+  animation: moveInBottom;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
 }
 .writter{
   opacity: 0.8;
 }
 .space{
   height: 100px;
+}
+@keyframes moveInLeft{
+  0%{
+      opacity: 0;
+      transform: translateX(100px);
+
+  }
+  80%{
+      transform: translateX(-10px);
+
+  }
+  100%{
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveInRight{
+ 0%{
+     opacity: 0;
+     transform: translateX(-100px);
+
+ }
+ 80%{
+     transform: translateX(10px);
+
+ }
+ 100%{
+   opacity: 1;
+   transform: translate(0);
+ }
+}
+@keyframes moveInBottom{
+ 0%{
+     opacity: 0;
+     transform: translateY(100px);
+
+ }
+ 80%{
+     transform: translateY(-10px);
+
+ }
+ 100%{
+   opacity: 1;
+   transform: translate(0);
+ }
+}
+@keyframes moveInButton{
+ 0%{
+     opacity: 0;
+     transform: translateY(30px);
+
+ }
+  
+ 100%{
+   opacity: 1;
+   transform: translate(0);
+ }
 }
 @media only screen and (min-width:1000px){
   .card{
