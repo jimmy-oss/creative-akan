@@ -134,6 +134,19 @@
  padding: 5px;
  cursor: pointer;
 }
+.submit{
+  position: absolute;
+  border-color: #ba24c2;
+  color: #fff;
+  border-radius: 5px;
+  background: #ba24c2;
+  letter-spacing: 1px;
+  width: 20%;
+ padding: 5px;
+ cursor: pointer;
+  
+ 
+}
 .content .input-box input:focus ~label,
 .content .input-box input:valid ~label{
   top: 0;

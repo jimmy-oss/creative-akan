@@ -20,7 +20,7 @@
      <form> 
        <div class="topic" style="text-align: center;"> Whats Your Birthday 🎂  Akan <br>Fill The Form Below</div>
      <div class="input-box">
-       <input type="number" required  id="year" required min="1960" max="2000"  class="form-control">
+       <input type="number" required  id="year" required min="1960" max="2000" >
        <label>Enter Your Year</label>
      </div>
      <div class="input-box">
@@ -28,7 +28,7 @@
       <label>Enter Your Month</label>
     </div>
     <div class="input-box">
-      <input type="number"  class="form-control" id="monthday" required min="1" max="31" >
+      <input type="number"    id="monthday" required min="1" max="31" >
       <label>Enter The Day Of Month</label>
     </div>
     <form class="radio-button">
@@ -42,13 +42,13 @@
                    </label>
                    <input type="reset" value="reset" class="reset">
     <div class="input-box">
-      <a href=#result >
-      <input type="submit" value="submit" onclick="checkDayOfWeek()">
-      </a>
+       <a href=#result>
+                        <button type="button" name="button" class="submit" onclick="checkDayOfWeek()">Submit</button> 
+                </a>
     </div>
      </form>
      </div>
-     <h1 id="result" class="names"></h1>
+     <h1 id="result"  class="names"></h1>
    </div>
       </body>
 </html>
