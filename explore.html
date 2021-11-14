@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="./css/explore.css">
+  <script src="./js/explore.js"></script>
+  <title>Birthday Form</title>
+</head>
+<body>
+  <button class="button"  style="vertical-align:right;" ><a href="./index.html"><span style="color:black; opacity: 8em; font-weight: 500; ">Back</span></a>
+  </button>
+   <div class="container">
+     <div class="content">
+       <div class="image-box">
+         <img src="./images/explore.svg" class="birthday">
+       </div>
+     <form> 
+       <div class="topic"> Whats Your Birthday Akan Fill The Form Below</div>
+     <div class="input-box">
+       <input type="number" required  id="year" required min="1980" max="2000"  class="form-control">
+       <label>Enter Your Year</label>
+     </div>
+     <div class="input-box">
+      <input type="number" required id="month" required min="1" max="12" >
+      <label>Enter Your Month</label>
+    </div>
+    <div class="input-box">
+      <input type="number"  class="form-control" id="monthday" required min="1" max="31" >
+      <label>Enter The Day Of Month</label>
+    </div>
+    <form class="radio-button">
+      <input class="genders lebels" type="radio" name="genders" id="rad1" value="Male">
+      <label class="form-check-label" for="radio">
+        Male
+           </label>
+      <input class="genders labels" type="radio" name="genders" id="radio" value="Female">
+      <label class="form-check-label" for="radio">
+           Female
+                        </label>
+    <div class="input-box">
+      <a href=#result>
+      <input type="submit" value="submit" onclick="checkDayOfWeek()">
+      </a>
+    </div>
+     </form>
+     </div>
+     <h1 id="result" class="names"></h1>
+   </div>
+</body>
+</html>
