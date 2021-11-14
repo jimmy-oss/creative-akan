@@ -7,6 +7,7 @@
    <link href="https://fonts.googleapis.com/css2?family=Charm&display=swap" rel="stylesheet">
    <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
    <link rel="stylesheet" href="./css/style.css">
+   <script src="./js/loader.js"></script>
    <title>Akan Website</title>
  </head>
  <body>
@@ -46,6 +47,12 @@
    menuToggle.classList.toggle('active')
    showcase.classList.toggle('active')
 })
+   </script>
+   <script>
+     var loader = document.getElementById("preloader");
+ window.addEventListener("load" , function(){
+   loader.style.display="none";
+ })
    </script>
  </body>
  </html>
