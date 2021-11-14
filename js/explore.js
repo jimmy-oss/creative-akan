@@ -63,25 +63,25 @@ function checkGender() {
     case gender = "male":
       switch (day) {
         case (0 || -0):
-          document.getElementById("result").innerHTML = "The day is on a sunday." + "  " + "Your akan birthday 🎂  is" + maleNames[0];
+          document.getElementById("result").innerHTML = "The day is on a sunday." + "  " + "Your akan birthday 🎂  is " + maleNames[0];
           break;
         case (1 || -1):
           document.getElementById("result").innerHTML = "The day is on a monday." + " " + "Your akan birthday 🎂  is " + maleNames[1];
           break;
         case (2 || -2):
-          document.getElementById("result").innerHTML = "The day is on a tuesday." + " " + "Your akan birthday 🎂  is" + maleNames[2];
+          document.getElementById("result").innerHTML = "The day is on a tuesday." + " " + "Your akan birthday 🎂  is " + maleNames[2];
           break;
         case (3 || -3):
-          document.getElementById("result").innerHTML = "The day is on a wednesday." + " " + "Your akan birthday 🎂  is" + maleNames[3];
+          document.getElementById("result").innerHTML = "The day is on a wednesday." + " " + "Your akan birthday 🎂  is " + maleNames[3];
           break;
         case (4 || -4):
-          document.getElementById("result").innerHTML = "The day is on a thursday." + " " + "Your akan birthday 🎂  is" + maleNames[4];
+          document.getElementById("result").innerHTML = "The day is on a thursday." + " " + "Your akan birthday 🎂  is " + maleNames[4];
           break;
         case (5 || -5):
           document.getElementById("result").innerHTML = "The day is on a friday." + " " + "Your akan birthday 🎂  is " + maleNames[5];
           break;
         case (6 || -6):
-          document.getElementById("result").innerHTML = "The day is on a saturday." + " " + "Your akan birthday 🎂  is" + maleNames[6];
+          document.getElementById("result").innerHTML = "The day is on a saturday." + " " + "Your akan birthday 🎂  is " + maleNames[6];
           break;
         default:
         // console.console.log("Pass");//Test male case
