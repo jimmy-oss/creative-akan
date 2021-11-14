@@ -133,12 +133,14 @@
 .content .message-box{
   min-height: 100px;
   position: relative;
+ 
 }
 .content .message-box textarea{
   position: absolute;
   height: 100%;
   width: 100%;
   resize: none;
+  font-size: 18px;
   background: #fae9fb;
   border: 2px solid transparent;
   border-radius: 6px;
@@ -160,9 +162,9 @@
 }
 .content .message-box textarea:focus ~ label{
   left: 12px;
-  top: -20px;
+  top: -15px;
   color: #ba24c2;
-  font-size: 14px;
+  font-size: 16px;
   background: #fff;
 }
 .content .input-box input[ type="submit"]{
