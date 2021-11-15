@@ -6,7 +6,7 @@ function getInput() {
   dayOfMonth = parseInt(document.getElementById("monthday").value);
 
    
-if (year == "" || year < 1900 || year >2000) {
+if (year == "" || year < 1980 || year >2000) {
     alert("Input the correct year");
     return false;
   } else if (month == "" || month < 1 || month > 12) {
