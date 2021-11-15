@@ -12,6 +12,7 @@
    justify-content: center;
    align-items: center;
    background: #fae9fb;
+   
  }
  .button {
   top: -15em;
@@ -145,7 +146,6 @@
  padding: 5px;
  cursor: pointer;
   
- 
 }
 .content .input-box input:focus ~label,
 .content .input-box input:valid ~label{
@@ -175,7 +175,7 @@
   text-align: center;
   transition: all 0.8s ease;
 }
-
+ 
 @media (max-width:1000px){
   .content .image-box{
     max-width: 70%;
