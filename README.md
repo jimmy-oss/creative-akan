@@ -1,4 +1,4 @@
-    # Birthday Website &#10024;
+ # Birthday Website &#10024;
  The project above is a birthday website which takes the user's birthday and calculates the day of the week they were born.
   ![Screen Shot 2021-11-15 at 06 48 47](https://user-images.githubusercontent.com/62022158/141720193-7029fd77-9998-4860-9da6-22023c924e63.png)
  
