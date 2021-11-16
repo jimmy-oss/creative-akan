@@ -18,44 +18,44 @@ which corresponds to the day of the week they were born.
 
 <h2>Form Application Behaviour &#10024;</h2>
       <p w3-class="large">
-           </div>
+        </div>
  <div class="responsive card-4">   
      <table class="table stripped bordered">
        <thread>
-              <tr class="theme">
+          <tr class="theme">
   <th>BEHAVIOUR OF THE WEBSITE</th>
   <th>INPUTS WHEN ONE CHOOSES EITHER MALE OR FEMALE</th> 
   <th>CHOICE OF INPUTS</th>
  <th>OUTPUT EXAMPLE IT SHOULD RETURN</th>
-            </tr>
+       </tr>
         </thread>
-                    <thead>
-                            <tbody>
-                                  <tr>
-         <td>Male</td>
-                  <td>month</td>
-                        <td>1-31</td>
-                            <td>true</td>
-                            </tr>
+             <thead>
+                  <tbody>
                         <tr>
-    <td>Female</td>
-            <td>year</td>
-                   <td>1-12</td>
-                         <td>true</td>
-                          </tr>
-                     <tr>
+                 <td>Male</td>
+                <td>month</td>
+                <td>1-31</td>
+                <td>true</td>
+                  </tr>
+               <tr>
+           <td>Female</td>
+           <td>year</td>
+           <td>1-12</td>
+            <td>true</td>
+               </tr>
+            <tr>
    <td>Both Male and Female</td>
-                   <td>days</td>
-                   <td>1-31</td>
-                    <td>true</td>
-                              </tr>
-                         <tr>
+            <td>days</td>
+             <td>1-31</td>
+             <td>true</td>
+               </tr>
+            <tr>
    <td>Akan receiving an error</td>
    <td>if the month is above 12, the day is 0 or 32,the is year 1900 or above 2000</td>
-    <td>month 13, day 32, year 1900 or above 2000</td>
-               <td> False</td>
+   <td>month 13, day 32, year 1900 or above 2000</td>
+          <td> False</td>
               </tr>
-                   </tbody>
+                 </tbody>
                         </thead>
                               </table>
   
