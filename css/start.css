@@ -1,7 +1,7 @@
 body
 {
     overflow-x: hidden;
-overflow-y: scroll;
+    overflow-y: scroll;
 }
 
 /* basic styles for black background and crosshair cursor */

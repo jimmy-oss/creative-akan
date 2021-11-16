@@ -1,5 +1,5 @@
 var a=prompt("The Username is jimmy");
- var b=prompt("The password is birthday");
+ var b=prompt("The Password is birthday");
   	if(a== "jimmy" && b=="birthday")
   	{
   	    window.location.href="start.html";
