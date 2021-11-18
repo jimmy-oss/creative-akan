@@ -4,6 +4,7 @@ function getInput() {
   year = parseInt(document.getElementById("year").value);
   month = parseInt(document.getElementById("month").value);
   dayOfMonth = parseInt(document.getElementById("monthday").value);
+   
 
    
 if (year == "" || year < 1980 || year >2000) {
@@ -39,7 +40,7 @@ let maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
 
 // female arrays
 let femalesOfWeek = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
-let femaleNames = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua"];
+let femaleNames = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua", " Ama"];
 
 
 //get selected radio button
@@ -84,27 +85,26 @@ function checkGender() {
     case gender = "female":
       switch (day) {
         case 0 || -0:
-          document.getElementById("result",1000).innerHTML = "The day is on a sunday." + "  " + "Your akan birthday 🎂  is  " + femaleNames[0] ;
+          document.getElementById("result").innerHTML = "The day is on a sunday." + "  " + "Your akan birthday 🎂  is  " + femaleNames[0] ;
           break;
         case 1 || -1:
-          document.getElementById("result",1000).innerHTML = "The day is on a monday." + " " + "Your akan birthday 🎂  is  " + femaleNames[1];
+          document.getElementById("result").innerHTML = "The day is on a monday." + " " + "Your akan birthday 🎂  is  " + femaleNames[1];
           break;
         case 2 || -2:
-          document.getElementById("result",1000).innerHTML = "The day is on a tuesday." + " " + "Your akan  birthday 🎂  is  " + femaleNames[2];
+          document.getElementById("result").innerHTML = "The day is on a tuesday." + " " + "Your akan  birthday 🎂  is  " + femaleNames[2];
           break;
         case 3 || -3:
-          document.getElementById("result",1000).innerHTML = "The day is on a wednesday." + " " + "Your akan birthday 🎂  is " + femaleNames[3];
+          document.getElementById("result").innerHTML = "The day is on a wednesday." + " " + "Your akan birthday 🎂  is " + femaleNames[3];
           break;
         case 4 || -4:
-          document.getElementById("result",1000).innerHTML = "The day is on a thursday." + " " + "Your akan birthday 🎂  is " + femaleNames[4];
+          document.getElementById("result").innerHTML = "The day is on a thursday." + " " + "Your akan birthday 🎂  is " + femaleNames[4];
           break;
         case 5 || -5:
-          document.getElementById("result",1000).innerHTML = "The day is on a friday." + " " + "Your akan  birthday 🎂  is " + femaleNames[5];
+          document.getElementById("result").innerHTML = "The day is on a friday." + " " + "Your akan  birthday 🎂  is " + femaleNames[5];
           break;
         case 6 || -6:
-          document.getElementById("result",1000).innerHTML = "The day is on a saturday." + " " + "Your akan birthday 🎂  is " + femaleNames[6];
+          document.getElementById("result").innerHTML = "The day is on a saturday." + " " + "Your akan birthday 🎂  is " + femaleNames[6];
           break;
-
       }
       break
     default:
