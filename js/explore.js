@@ -21,7 +21,7 @@ if (year == "" || year < 1980 || year >2000) {
 //Calculate func
 function calculateDay() {
   getInput();
-  dayOfWeek =  ((((5 * year / 4)) + ((26 * (month + 1) / 10)) + dayOfMonth) % 8) ;
+  dayOfWeek =  ((((5 * year / 4)) + ((31 * (month + 1) / 10)) + dayOfMonth) % 7) ;
   console.log(dayOfWeek); //Test the calculateDay function
   return (Math.floor(dayOfWeek));
 }
